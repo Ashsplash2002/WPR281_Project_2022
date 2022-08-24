@@ -1,0 +1,31 @@
+body{
+    background-color: #000000;
+}
+
+.wrapper{
+    margin: 80px;
+    
+}
+.form-signin{
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgb(29, 33, 46);
+    color: aliceblue;
+    padding: 15px 40px;
+    border: 1px solid #383737;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(255, 254, 254, 0.521), 0 6px 20px 0 rgba(255, 255, 255, 0.705);
+}
+.form-signin .form-signin-heading, .form-signin .checkbox{
+    margin-bottom: 10px;
+}
+.form-signin input[type="text"], .form-signin input[type="password"]{
+    margin-bottom: 20px;
+    
+}
+.form-signin .form-control{
+    padding: 10px;
+}
+/* color breathing affect on the form border*/
+
+

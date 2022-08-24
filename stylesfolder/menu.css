@@ -1,0 +1,52 @@
+td{
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 25px;
+}
+th{
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 15px;
+}
+table{
+    margin: 0 auto;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+.card{
+    width: 502px;
+    height: 202px;
+    border: solid 1px #000000;
+    box-shadow: 0 4px 8px 0 rgba(255, 254, 254, 0.521), 0 6px 20px 0 rgba(255, 255, 255, 0.705);
+    border-radius: 15px;
+}
+li{
+    padding-bottom: 25px;
+    float: left;
+    display: inline;
+    
+
+}
+.space{
+    padding-top: 25px;
+}
+body{
+    background-color: #000000;
+}
+button{
+    box-shadow: 0 4px 8px 0 rgba(255, 254, 254, 0.521), 0 6px 20px 0 rgba(255, 255, 255, 0.705);
+   
+}
+.size{
+    
+    height: 100px;
+    background-color: gray;
+    
+}
+
+#corner{
+    float: bottom;
+    position: absolute;
+}
