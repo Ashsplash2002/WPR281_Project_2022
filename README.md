@@ -5,24 +5,32 @@
 </br>
 
 ## Table of contents 
-- [Introduction](#introduction) 
-- [Steps to set up the application environment and run the application](#setup)
-- [Sub paragraph](#subparagraph1)
-- [Another paragraph](#paragraph2)  
+
+
+* [Introduction](#introduction) 
+  * [What the application does](#usage)
+  * [Technologies used](#tech)
+  * [Challenges faced by developers of project](#challenges)
+* [Steps to set up the application environment and run the application](#setup)
+* [Project contributors](#contributors)
+  * [Markdown programmers](#markdown)
+  * [Web Storage API programmers](#webapi)
+  * [Bootstrap programmers](#bootstrap)
+
 
 ## Introduction <a name='introduction'></a>
-### What the application does 
+### What the application does <a name='usage'></a>
 ---------
 This application will keep track of software issues.</br>
 These issues will be logged by users experience them while utilizing the assigned software for their position in a business. 
 
-### Technologies used 
+### Technologies used <a name='tech'></a>
 ---------
 1. Web Storage API: used as a backend local database to store data entered into the system and to extract this data to be used at a later time.
 2. Bootstrap: used to create the user interface.
 3. Markdown: used to create this READ ME documentation. 
 
-### Challenges faced by developers of project
+### Challenges faced by developers of project <a name='challenges'></a>
 ---------
 
 </br>
@@ -45,4 +53,35 @@ If you do not have Visual Studio Code downloaded on your personal computer [You 
 11. If you do not have it already installed we recommend installing the extension called "Live Server".
 12. Once this is installed you can right-click on the .html file and choose "Open with Live Server".
 13. You should now see the bug tracker login page on your local host. 
+
+</br>
+
+## Project contributors <a name='contributors'></a>
+
+### Markdown programmers <a name='markdown'></a>
+---------
+#### Ashle Paige Olivier
+Student Email: 578325@student.belgiumcampus.ac.za </br>
+GitHub Name: Ashsplash2002 </br>
+
+### Web Storage API programmers <a name='webapi'></a>
+---------
+#### Emile Ayden Fourie 
+Student Email: 577102@student.belgiumcampus.ac.za</br>
+GitHub Name: EmileAFourie </br>
+
+#### Tamaryn Nell
+Student Email: 577097@student.belgiumcampus.ac.za</br>
+GitHub Name: Tamaryn6198 </br>
+
+### Bootstrap programmers <a name='bootstrap'></a>
+---------
+#### Damon Hattingh 
+Student Email: 577143@student.belgiumcampus.ac.za </br>
+GitHub Name: DamonHattingh</br>
+
+#### Ruhan Potgieter
+Student Email: 576006@student.belgiumcampus.ac.za</br>
+GitHub Name: RuhanPotgieter</br>
+
 
