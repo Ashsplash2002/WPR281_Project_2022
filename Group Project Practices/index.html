@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="main.js"></script>
+    <title>LocalStorage Practice</title>
+</head>
+<body>
+    <div id="formDiv">
+        <form id="ticketForm">
+            <h1>Local Storage</h1>
+            <label for="summ" >Summary</label>
+            <input type="text" id="summ" placeholder="Summary of Issue" required autofocus><br>
+
+            <label for="details" >Description</label>
+            <input type="text" id="details" placeholder="Detailed description of the issue" required><br>
+
+            <label for="identifier" >Identified by</label>
+            <input type="text" id="identifier" placeholder="Who identified the issue" required><br>
+
+            <label for="dateID" >Identified on</label>
+            <input type="date" id="dateID" required><br>
+
+            <!-- create dropdown instead -->
+            <label for="project" >Related to</label>
+            <input type="text" id="project" placeholder="Which project the issue is related to" required><br>
+            
+            <button type="submit">Store Records</button>
+        </form>
+        <br>
+        <label for="retrieveKey" >Enter Key to retrieve item</label>
+        <input type="text" id="retrieveKey" placeholder="retrieveKey" required><br>
+        <button id="retrieveButton">Retrieve records</button>
+        <br>
+        <div id="retrieve"></div>
+        <br>
+        <label for="removeKey" >Enter Key to delete item</label>
+        <input type="text" id="removeKey" placeholder="removeKey" required><br>
+        <button id="removeButton">Remove record</button>
+        <br>
+        <button id="clearButton">Clear all records</button>
+        <button id="output">Show all records</button>
+
+        <div id="print"></div>
+  </div>
+</body>
+</html>
