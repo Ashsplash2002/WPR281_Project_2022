@@ -35,7 +35,7 @@ These issues will be logged by users experience them while utilizing the assigne
 
 </br>
 
-## Steps to set up the application environment and run the application <a name='setup'></a>
+## Steps for setting up the application environment and run the application <a name='setup'></a>
 </br>
 For this explanation we will be setting up the environment on Visual Studio Code so ensure that this is first downloaded and installed before following the next steps. </br>
 
