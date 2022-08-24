@@ -9,8 +9,8 @@
 
 * [Introduction](#introduction) 
   * [What the application does](#usage)
-  * [Technologies used](#tech)
-  * [Challenges faced by developers of project](#challenges)
+* [Technologies used](#tech)
+* [Challenges faced by developers of project](#challenges)
 * [Steps to set up the application environment and run the application](#setup)
 * [Project contributors](#contributors)
   * [Markdown programmers](#markdown)
@@ -24,14 +24,16 @@
 This application will keep track of software issues.</br>
 These issues will be logged by users experience them while utilizing the assigned software for their position in a business. 
 
-### Technologies used <a name='tech'></a>
----------
+</br>
+
+## Technologies used <a name='tech'></a>
+
 1. Web Storage API: used as a backend local database to store data entered into the system and to extract this data to be used at a later time.
 2. Bootstrap: used to create the user interface.
 3. Markdown: used to create this READ ME documentation. 
 
-### Challenges faced by developers of project <a name='challenges'></a>
----------
+## Challenges faced by developers of project <a name='challenges'></a>
+
 
 </br>
 
