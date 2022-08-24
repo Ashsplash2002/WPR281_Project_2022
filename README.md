@@ -24,7 +24,17 @@
 This application will keep track of software issues.</br>
 The administrator will create and update tickets, which is the information on the software issue.</br>
 The ticket contains:
-1. A summary of the issue, detailed description of the issue, the person that identified the issue, the date the issue is identified on, the project that it is related to, the priority level of the issue, the developer that is assigned to resolve the issue, the target resolution date, the actual resolution date, the resolution summary, the status: open, resolved or overdue. 
+1. A summary of the issue
+2. A detailed description of the issue
+3. The person that identified the issue
+4. The date the issue is identified on
+5. The project that it is related to
+6. The priority level of the issue
+7. The developer that is assigned to resolve the issue
+8. The target resolution date
+9. The actual resolution date
+10. The resolution summary
+11. The status: open, resolved or overdue. 
 
 </br>
 
@@ -44,19 +54,20 @@ The ticket contains:
 For this explanation we will be setting up the environment on Visual Studio Code so ensure that this is first downloaded and installed before following the next steps. </br>
 
 If you do not have Visual Studio Code downloaded on your personal computer [You can download it here](https://code.visualstudio.com/download)
-4. Open and log into GitHub on your web browser.
-5. Enter "WPR281_Project_2022" into the search bar on GitHub. 
-6. Click the green button called code. 
-7. You will now get a list of options. Choose Download zip.
-8. Extraxt the files from the downloaded zip folder.
-9. Open Visual Studio Code.
-10. Click on file in the navigation bar. 
-11. You will now be presented with a dropdown list of options. Choose open folder.
-13. Choose the extracted folder and click select folder.
-14. You will now be presented with the files that are contained in the project repository.
-18. If you do not have it already installed we recommend installing the extension called "Live Server".(Alt+L+Alt+O)
-19. Once this is installed you can right-click on the login.html file and choose "Open with Live Server".
-20. You should now see the bug tracker login page on your browser. 
+1. Open and log into GitHub on your web browser.
+2. Enter "WPR281_Project_2022" into the search bar on GitHub. 
+3. Click the green button called code as seen in the image below.</br>
+![Green code button](https://user-images.githubusercontent.com/86288374/186472845-57560d77-1acc-41c4-a401-709ba33757ea.PNG)
+4. You will now get a list of options. Choose Download zip.
+5. Extraxt the files from the downloaded zip folder.
+6. Open Visual Studio Code.
+7. Click on file in the navigation bar.An image is provided to show you where to find this option. 
+![File in navigation bar](https://user-images.githubusercontent.com/86288374/186472570-ac4fc259-05c4-4529-b8cc-3bf8a077bed0.PNG)
+8. You will now be presented with a dropdown list of options. Choose open folder.Choose the extracted folder and click select folder.
+9. You will now be presented with the files that are contained in the project repository.
+10. If you do not have it already installed we recommend installing the extension called "Live Server".(Alt+L+Alt+O)
+11. Once this is installed you can right-click on the login.html file and choose "Open with Live Server".
+12. You should now see the bug tracker login page on your browser. 
 
 </br>
 
