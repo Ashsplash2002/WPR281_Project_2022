@@ -11,6 +11,7 @@
   * [What the application does](#usage)
 * [Technologies used](#tech)
 * [Challenges faced by developers of project](#challenges)
+  * [Bootstrap Challenges](#bschallenges)
 * [Steps to set up the application environment and run the application](#setup)
 * [Project contributors](#contributors)
   * [Markdown programmers](#markdown)
@@ -45,7 +46,10 @@ The ticket contains:
 3. Markdown: used to create this READ ME documentation. 
 
 ## Challenges faced by developers of project <a name='challenges'></a>
-
+### Bootstrap Challenges <a name='bschallenges'></a>
+---------
+1. Creating a popup form using HTML and CSS.
+2. Learning the Bootstrap programming language. 
 
 </br>
 
