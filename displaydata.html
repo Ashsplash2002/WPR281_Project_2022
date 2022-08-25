@@ -14,44 +14,42 @@
 </style>
 </head>
 <body>
+    
     <nav class="size">
         <button class="btn btn-primary mb-3 btn-group-lg btn-dark btn-outline-light"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5 5C3.34315 5 2 6.34315 2 8V16C2 17.6569 3.34315 19 5 19H19C20.6569 19 22 17.6569 22 16V8C22 6.34315 20.6569 5 19 5H5ZM7 7H5C4.44772 7 4 7.44772 4 8V9H7V7ZM9 7V9H20V8C20 7.44771 19.5523 7 19 7H9ZM7 11H4V13H7V11ZM9 13V11H20V13H9ZM7 15H4V16C4 16.5523 4.44772 17 5 17H7V15ZM9 17V15H20V16C20 16.5523 19.5523 17 19 17H9Z" fill="currentColor"></path></svg></button>
     </nav>
+    
     <table style="margin: auto;">
         <tr>
             <td>
-                <a style="color:azure">Home</a>
+                <a style="color:azure">Backlog: </a>
             </td>
             <td>
-                <a href="menureg.html" class="btn btn-primary mb-3 btn-group-lg">Register</a>
+                <a style="color:azure">Ready: </a>
             </td>
             <td>
-                <a href="menulog.html" class="btn btn-primary mb-3 btn-group-lg">Login</a>
+                <a style="color:azure">In Progress: </a>
             </td>
             <td>
-                <a href="menudisplaydata.html" class="btn btn-primary mb-3 btn-group-lg">Display Data</a>
+                <a style="color:azure">Done: </a>
             </td>
         <tr>
-        <td><button class="btn btn-lrg btn-primary btn-block btn-dark btn-outline-light" >
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" t="1551322312294" viewBox="0 0 1024 1024" version="1.1" pId="10297" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-
-                </defs>
-                <path d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z" pId="10298">
-
-                </path>
-                <path d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z" pId="10299">
-
-                </path>
-            </svg>
-        </button>
-        <div class="popup">
-            <div class="close-btn">&times;</div>
-            <div class="form1">
-                <h2 style="">log</h2>
-                <div class = ""></div>
-            </div>                
-        </div>
+        <td><div>
+            <button id="show-popup" class="btn btn-lrg btn-primary btn-block btn-dark btn-outline-light" >
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" t="1551322312294" viewBox="0 0 1024 1024" version="1.1" pId="10297" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+    
+                    </defs>
+                    <path d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z" pId="10298">
+    
+                    </path>
+                    <path d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z" pId="10299">
+    
+                    </path>
+                </svg>
+            </button>
+            </div>
+        
     </td>
         <td><button class="btn btn-lrg btn-primary btn-block btn-dark btn-outline-light"><svg stroke="currentColor" fill="currentColor" stroke-width="0" t="1551322312294" viewBox="0 0 1024 1024" version="1.1" pId="10297" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><defs></defs><path d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z" pId="10298"></path><path d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z" pId="10299"></path></svg></button></td>
         <td><button class="btn btn-lrg btn-primary btn-block btn-dark btn-outline-light"><svg stroke="currentColor" fill="currentColor" stroke-width="0" t="1551322312294" viewBox="0 0 1024 1024" version="1.1" pId="10297" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><defs></defs><path d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z" pId="10298"></path><path d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z" pId="10299"></path></svg></button></td>
@@ -160,4 +158,41 @@
     </table>
     
 </body>
+<div class="popup">
+    <div class="close-btn">&times;</div>
+    <div class="form1">
+        <h2 >Ticket</h2>
+        <div class="form1-element">
+            
+            <select id="electDepartment">
+                <option value="">select area</option>
+            </select>
+            </div>
+        <div class = "form1-element">
+            <select id="selectName">
+                <option>select dev</option>
+            </select>
+            <div style="padding-top: 15px;"> <textarea type="text" style=" border-radius: 10px;padding-left: 15px; width: 200px; height: 100px;" placeholder="Description"></textarea></div>
+            <div>
+                <ul style="list-style: none;">
+                       <li></li>                      
+                </ul>
+                <div class="form1-element">
+                    <label>low</label>
+                    <input type="checkbox" name="" value="">
+                    <label>medium</label>
+                    <input type="checkbox" name="" value="">
+                    <label>high</label>
+                    <input type="checkbox" name="" value="">
+                    <label>critical</label>
+                    <input type="checkbox" name="" value="">
+                    
+                </div>
+                <div class="form1-element">
+                    <button class="btn btn-secondary mb-3 btn-group-lg ">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>                
+</div>
 </html>
