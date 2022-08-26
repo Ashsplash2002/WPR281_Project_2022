@@ -49,7 +49,8 @@ The ticket contains:
 ### Bootstrap Challenges <a name='bschallenges'></a>
 ---------
 1. Creating a popup form using HTML and CSS.
-2. Learning the Bootstrap programming language. 
+2. Learning the Bootstrap programming language.
+3. As the we do not know how many issues are going to be added to the bug tracker website, we needed to use JavaScript to add a list element everytime a form was submitted. This was done using an on click event. 
 
 </br>
 
