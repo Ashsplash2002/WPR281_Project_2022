@@ -1,4 +1,15 @@
 
+document.querySelector("#show-popup").addEventListener("click", function () 
+{
+document.querySelector(".popup").classList.add("active");
+});
+
+document.querySelector(".popup .close-btn").addEventListener("click", function () 
+{
+document.querySelector(".popup").classList.remove("active");
+});
+
+
 //simple array of words to list the common areas of problem
 var select = document.getElementById("selectName");
 var option = ["john", "jane", "joe", "jill"];
@@ -13,7 +24,7 @@ for (var i = 0; i < option; i++) {
 }
 // simple array of names to display in the select box
 var select1 = document.getElementById("selectDepartment");
-var option1 = ["john", "jane", "joe", "jill"];
+var option1 = ["Chrome", "Firefox", "Edge", "All"];
 
 for (var j = 0; j < option; j++) {
     var opt1 = option[j];
@@ -24,15 +35,7 @@ for (var j = 0; j < option; j++) {
     
 }
 
-document.querySelector("#show-popup").addEventListener("click", function () 
-{
-document.querySelector(".popup").classList.add("active");
-});
 
-document.querySelector(".popup .close-btn").addEventListener("click", function () 
-{
-document.querySelector(".popup").classList.add("active");
-});
 
 
 

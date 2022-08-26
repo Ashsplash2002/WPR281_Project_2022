@@ -1,5 +1,5 @@
 body{
-    background-color: #000000;
+    background-color: #181b24e0;
 }
 
 .wrapper{
@@ -7,17 +7,22 @@ body{
     
 }
 .form-signin{
-    max-width: 500px;
-    margin: 0 auto;
+    position: absolute;
+    width: 500px;
+    top: 30%;
+    left: 40%;
+    
     background-color: rgb(29, 33, 46);
     color: aliceblue;
-    padding: 15px 40px;
+    padding: 20px 30px;
     border: 1px solid #383737;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(255, 254, 254, 0.521), 0 6px 20px 0 rgba(255, 255, 255, 0.705);
+    box-shadow: 0 2px 2px 0 rgba(255, 254, 254, 0.521), 0 2px 20px 0 rgba(255, 255, 255, 0.705);
 }
 .form-signin .form-signin-heading, .form-signin .checkbox{
     margin-bottom: 10px;
+    font-weight: 400;
+    font-style: bold;
 }
 .form-signin input[type="text"], .form-signin input[type="password"]{
     margin-bottom: 20px;
