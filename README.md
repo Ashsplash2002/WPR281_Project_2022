@@ -11,6 +11,8 @@
   * [What the application does](#usage)
 * [Technologies used](#tech)
 * [Challenges faced by developers of project](#challenges)
+  * [Markdown Challenges](#mdchallenges)
+  * [Web Storage API Challenges](#apichallenges)
   * [Bootstrap Challenges](#bschallenges)
 * [Steps to set up the application environment and run the application](#setup)
 * [Project contributors](#contributors)
@@ -41,20 +43,35 @@ The ticket contains:
 
 ## Technologies used <a name='tech'></a>
 
-1. Web Storage API: used as a backend local database to store data entered into the system and to extract this data to be used at a later time.
-2. Bootstrap: used to create the user interface.
-3. Markdown: used to create this READ ME documentation. 
+1. Markdown: used to create this README documentation. 
+2. Web Storage API: used as a backend local database to store data entered into the system and to extract this data to be used at a later time.
+3. Bootstrap: used to create the user interface.
 
 ## Challenges faced by developers of project <a name='challenges'></a>
+### Markdown Challenges <a name='mdchallenges'></a>
+---------
+1. Learning the Markdown programming language.
+2. Learning how to add an image from a repository folder into the README documentation.
+
+### Web Storage API Challenges <a name='apichallenges'></a>
+---------
+1. Researching the localStorage web storage object and how we could utilise it for this project.
+2. Researching arrays to keep better track of the people and project objects.
+3. Researching classes to make the creation of the person and project classes more efficient.
+4. Learning about JavaScript JSON to help keep the objects we store to the localStorage as an object as things are stored as strings by default to the localStorage. 
+5. Researching about adding images to objects using JavaScript for the profile pictures of the people objects.
+6. Reasearching how to pass objects as parameters of functions.
+---------
 ### Bootstrap Challenges <a name='bschallenges'></a>
 ---------
 1. Creating a popup form using HTML and CSS.
 2. Learning the Bootstrap programming language.
 3. As the we do not know how many issues are going to be added to the bug tracker website, we needed to use JavaScript to add a list element everytime a form was submitted. This was done using an on click event. 
 
+
 </br>
 
-## Steps for setting up the application environment and run the application <a name='setup'></a>
+## Steps for setting up the application environment and running the application <a name='setup'></a>
 </br>
 For this explanation we will be setting up the environment on Visual Studio Code so ensure that this is first downloaded and installed before following the next steps. </br>
 
