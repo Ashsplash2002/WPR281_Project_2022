@@ -60,15 +60,15 @@ button{
 }
 
 .popup{
-  
+   
     position: absolute;
-    top: -150%;
-    left: 50%;
-    opacity:0;
-    transform: translate(-50%, -50%) scale(1.25);
+    top: 30%;
+    left: 40%;
+    display: none;
+    
     width: 500px;
     padding: 20px 30px;
-    background-color: #10043d;
+    background-color: #100b20;
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.15);
     border-radius: 10px;
     transition: top 0ms ease-in-out 200ms,
