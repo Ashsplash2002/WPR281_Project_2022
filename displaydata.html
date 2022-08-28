@@ -53,105 +53,21 @@
         </tr>
         <tr >
             <td>
+                <ul class="list"   style="list-style: none;">
+                <div id="issuesList"></div>
+                </ul>
+            </td>
+            <td>
+                <ul style="list-style: none;"></ul>
+            </td>
+            <td>
                 <ul style="list-style: none;">
-                    <li>
-                        <div class="card">
-                            <h6 style="color:aliceblue">Name</h6>
-                            <p style="color:aliceblue">Description</p>
-                            <p style="color:aliceblue">Priority</p>
-                            <p style="color:aliceblue">Status</p>
-                            
-
-                        </div>
-                    </li>
-                    <li> 
-                        <div class="card">
-            
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card">
-            
-                        </div>
-                    </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    
                 </ul>
             </td>
             <td>
                 <ul style="list-style: none;">
-                    <li>
-                        <div class="card">
-            
-                        </div>
-                    </li>
-                    <li> 
-                        <div class="card">
-            
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card">
-            
-                        </div>
-                    </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </td>
-            <td>
-                <ul style="list-style: none;">
-                    <li>
-                        <div class="card">
-            
-                        </div>
-                    </li>
-                    <li> 
-                        <div class="card">
-            
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card">
-            
-                        </div>
-                    </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </td>
-            <td>
-                <ul style="list-style: none;">
-                    <li>
-                        <div class="card">
-            
-                        </div>
-                    </li>
-                    <li> 
-                        <div class="card">
-            
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card">
-            
-                        </div>
-                    </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                    
             </td>
 
             
@@ -159,51 +75,60 @@
     </table>
     <div>
         
-        <div class="popup">
+        <div id="issuesList" class="popup">
             <div onclick="hidepopup()" class="close-btn">&times;</div>
             <div class="form1">
                 <h2 >Ticket</h2>
                 <div class="form1-element">
-                    
-                    <select id="selectDepartment">
-                        <option value="">select Project</option>
-                        <option value="1">Project 1</option>
-                        <option value="2">Project 2</option>
-                        <option value="3">Project 3</option>
-                        
-                    </select>
+                    <button onclick="submitticket()" class="btn btn-secondary mb-3 btn-group-lg ">Submit</button>
+                    <ul style="list-style: none;">
+                        <li>
+                            <select id="projName">
+                                <option value="">select Project</option>
+                                <option value="Project1">Project 1</option>
+                                <option value="Project2">Project 2</option>
+                                <option value="Project3">Project 3</option>
+                                
+                            </select>
+                        </li>                      
+                 </ul>
+                 
                     </div>
                 <div class = "form1-element">
-                    <select id="selectName">
+                    <select id="DevName">
                         <option value="">select developer</option>
                         <option value="John">John</option>
                         <option value="Jake">Jake</option>
                         <option value="Peter">Peter</option>
 
                     </select>
-                    <div style="padding-top: 15px;"> <textarea type="text" style=" border-radius: 10px;padding-left: 15px; width: 200px; height: 100px;" placeholder="Description"></textarea></div>
                     <div>
-                        <ul style="list-style: none;">
-                               <li></li>                      
-                        </ul>
+                        
                         <div class="form1-element">
-                            <label>low</label>
-                            <input type="checkbox" name="" value="">
-                            <label>medium</label>
-                            <input type="checkbox" name="" value="">
-                            <label>high</label>
-                            <input type="checkbox" name="" value="">
-                            <label>critical</label>
-                            <input type="checkbox" name="" value="">
+                            <select id="selectPriority">
+                                <option value="">select Priority</option>
+                                <option value="Low">Low</option>
+                                <option value="Medium">Medium</option>
+                                <option value="High">High</option>
+                                <option value="Urgent">Urgent</option>
                             
                         </div>
+                    <div style="padding-top: 15px;"> <input type = 'text' class = 'form-control' id = 'issueDesc' placeholder = 'Describe the issue...'></div>
+                    
                         <div class="form1-element">
-                            <button onclick="submitticket()" class="btn btn-secondary mb-3 btn-group-lg ">Submit</button>
+                            
+                            
                         </div>
                     </div>
                 </div>
             </div>                
         </div>
+        <script src = 'http://chancejs.com/chance.min.js'></script><script
+      src='http://code.jquery.com/jquery-3.2.1.min.js'
+      integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+      crossorigin='anonymous'></script>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' crossorigin='anonymous'></script>
+
 
 </body>
 
