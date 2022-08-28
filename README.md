@@ -83,7 +83,7 @@ If you do not have Visual Studio Code downloaded on your personal computer [You 
 4. You will now get a list of options. Choose Download zip.
 5. Extraxt the files from the downloaded zip folder.
 6. Open Visual Studio Code.
-7. Click on file in the navigation bar.An image is provided to show you where to find this option. 
+7. Click on file in the navigation bar. An image is provided to show you where to find this option. 
 ![File in navigation bar](https://user-images.githubusercontent.com/86288374/186472570-ac4fc259-05c4-4529-b8cc-3bf8a077bed0.PNG)
 8. You will now be presented with a dropdown list of options. Choose open folder.Choose the extracted folder and click select folder.
 9. You will now be presented with the files that are contained in the project repository.
