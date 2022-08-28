@@ -10,7 +10,6 @@ function showpopup(){
     document.getElementsByClassName('popup')[0].style.display = "block";
 }
 
-
 //simple array of words to list the common areas of problem
 var select = document.getElementById("selectName");
 var option = ["john", "jane", "joe", "jill"];

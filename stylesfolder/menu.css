@@ -69,8 +69,8 @@ button{
     
     width: 500px;
     padding: 20px 30px;
-    background-color: #100b20;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.15);
+    background-color: #181C23;
+    box-shadow: 2px 2px 2px 5px rgba(255, 255, 255, 0.15);
     border-radius: 10px;
     transition: top 0ms ease-in-out 200ms,
                 opacity 200ms ease-in-out 0ms,
