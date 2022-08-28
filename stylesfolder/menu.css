@@ -19,6 +19,7 @@ table{
     background-color: #15181fe0;
     width: 502px;
     height: 202px;
+    margin-left: 28px;
     border: solid 1px #000000;
     box-shadow: 01px 2px 0 rgba(46, 42, 42, 0.904), 0 2px 25px 0 rgba(255, 255, 255, 0.418);
     border-radius: 15px;
