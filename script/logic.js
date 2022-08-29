@@ -31,8 +31,9 @@ class Person
 // Ticket Class
 class Ticket
 {
-    constructor(summary, details, identified, dateID, projectName, personName, status = "open", priority, targetResDate, actualResDate = null, resolutionSumm = "")
+    constructor(id, summary, details, identified, dateID, projectName, personName, status = "open", priority, targetResDate, actualResDate = null, resolutionSumm = "")
     {
+        this.id = id,
         this.summary = summary,
         this.details = details,
         this.identified = identified,
@@ -80,18 +81,7 @@ function store()
     hidepopup();
     // alert("running")
     //stores items in the localStorage
-    var summary = document.getElementById("summ").value;
-    var details = document.getElementById('details').value;
-    var user = document.getElementById('identifier').value;
-    var dateID = document.getElementById('dateID').value;
-    var projectName = document.getElementById('projName').value;
-    var personName = document.getElementById('DevName').value;
-    var status = document.getElementById('status').value;
-    var priority = document.getElementById('selectPriority').value;
-    var targetDate = document.getElementById('targetDate').value;
-    // alert("B4 Ticket");
-    let ticket = new Ticket(summary, details, user, dateID, projectName, personName, status, priority, targetDate);
-
+    
     let key = 0;
     // alert("B4 Loop")
     if(localStorage.length == 0)
@@ -102,10 +92,73 @@ function store()
     {
         key = localStorage.length + 1;
     }
+    var summary = document.getElementById("summ").value;
+    var details = document.getElementById('details').value;
+    var user = document.getElementById('identifier').value;
+    var dateID = document.getElementById('dateID').value;
+    var projectName = document.getElementById('projName').value;
+    var personName = document.getElementById('DevName').value;
+    var status = document.getElementById('status').value;
+    var priority = document.getElementById('selectPriority').value;
+    var targetDate = document.getElementById('targetDate').value;
+    // alert("B4 Ticket");
+    let ticket = new Ticket(key, summary, details, user, dateID, projectName, personName, status, priority, targetDate);
+    
     //converting object to string
     // alert("B4 Save")
     window.localStorage.setItem(key, JSON.stringify(ticket));
     // alert(localStorage.length);
+}
+
+function editTicket()
+{
+    // edit ticket
+    let key = document.getElementById("edit").value;
+    let record = window.localStorage.getItem(key);
+    let ticket = JSON.parse(record);
+    let proj = ticket.project;
+    let dev = ticket.assigned;
+
+    document.getElementById("editSumm").value = ticket.summary;
+    document.getElementById("editDetails").value = ticket.details;
+    document.getElementById("editIdentifier").value = ticket.identified;
+    document.getElementById("editDateID").value = ticket.dateID;
+
+    document.getElementById("editProject").value = proj.name;
+    document.getElementById("editPerson").value = dev.firstname;
+
+    document.getElementById("editStatus").value = ticket.status;
+    document.getElementById("editPriority").value = ticket.priority;
+    document.getElementById("editTargetDate").value = ticket.targetResDate;
+    document.getElementById("editActualDate").value = ticket.actualResDate;
+    document.getElementById("editResSumm").value = ticket.resolutionSumm;
+}
+
+function saveTicket()
+{
+    // save edited ticket
+    let key = document.getElementById("edit").value;
+    let record = window.localStorage.getItem(key);
+    let ticket = JSON.parse(record);
+
+    // get edited details
+    ticket.summary = document.getElementById('editSumm').value;
+    ticket.details = document.getElementById('editDetails').value;
+    ticket.identified = document.getElementById('editIdentifier').value;
+    ticket.dateID = document.getElementById('editDateID').value;
+    ticket.project = setProject(document.getElementById('editProject').value);
+    ticket.assigned = setPerson(document.getElementById('editPerson').value);
+    ticket.status = document.getElementById('editStatus').value;
+    ticket.priority = document.getElementById('editPriority').value;
+    ticket.targetResDate = document.getElementById('editTargetDate').value;
+    ticket.actualResDate = document.getElementById('editActualDate').value;
+    ticket.resolutionSumm = document.getElementById('editResSumm').value;
+
+    // delete current local storage item
+    localStorage.removeItem(key);
+
+    // add updated ticket to local storage
+    window.localStorage.setItem(key,JSON.stringify(ticket));
 }
 
 function setProject(projectName)
@@ -168,6 +221,14 @@ function setPerson(personName)
     }
 }
 
+// Remove specific ticket
+function removeItem()
+{ //deletes item from localStorage
+    var key = document.getElementById('removeKey').value; //gets key from user
+    localStorage.removeItem(key) //passes key to the removeItem method
+    console.log("remove items");
+}
+
 // Clear all tickets
 function clearStorage()
 { //clears the entire localStorage
@@ -175,9 +236,23 @@ function clearStorage()
     console.log("clear records");
 }
 
+function retrieveRecords()
+{ 
+    //retrieves items in the localStorage
+    var key = document.getElementById('retrieveKey').value; //gets key from user
+    console.log("retrieve records");
+    var records = window.localStorage.getItem(key); //searches for the key in localStorage
+    var p = document.createElement("p");
+    var infor = document.createTextNode(records);
+    // alert("TypeOf: " + typeof infor);
+    p.appendChild(infor);
+    var element = document.getElementById("output");
+    element.appendChild(p);
+}
+
 function showAllRecords() 
 {
-    alert(localStorage.length);
+    // alert(localStorage.length);
     for (var i = 0; i < localStorage.length; i++) 
     {
         let key = localStorage.key(i); //records
@@ -202,9 +277,9 @@ window.onload =function()
 { //ensures the page is loaded before functions are executed.
     document.getElementById("submitButton").onclick = store
     document.getElementById("clearButton").onclick = clearStorage
-    // document.getElementById("removeButton").onclick = removeItem
-    // document.getElementById("retrieveButton").onclick = retrieveRecords
-    document.getElementById("retrieveButton").onclick = showAllRecords
-    // document.getElementById("editButton").onclick = editTicket
-    // document.getElementById("saveButton").onclick = saveTicket
+    document.getElementById("removeButton").onclick = removeItem
+    document.getElementById("retrieveButton").onclick = retrieveRecords
+    document.getElementById("retrieveAllButton").onclick = showAllRecords
+    document.getElementById("editButton").onclick = editTicket
+    document.getElementById("saveButton").onclick = saveTicket
 }

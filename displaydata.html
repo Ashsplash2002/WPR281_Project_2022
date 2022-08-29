@@ -169,13 +169,69 @@
             
         </div>
 
-        <p id="demo"></p>
+        <label for="removeKey" >Enter ticket number to delete item</label>
+        <input type="text" id="removeKey" placeholder="remove ticket number" required><br>
+        <button id="removeButton">Remove record</button><br>
+
+        <!-- Confirm which ticket to edit -->
+        <label for="edit">Enter the ticket number for the ticket you want to edit</label>
+        <input type="text" id="edit" placeholder="edit ticket number" required><br>
+        <button id="editButton">Edit ticket</button><br><br>
+
+        <!-- Edit ticket -->
+
+        <div id="ticket">
+            <h2>Edit Ticket</h2>
+            <label for="editSumm" >Summary</label>
+            <input type="text" id="editSumm" contenteditable="true" autofocus><br>
+
+            <label for="editDetails" >Description</label>
+            <input type="text" id="editDetails" contenteditable="true"><br>
+
+            <label for="editIdentifier" >Identified by</label>
+            <input type="text" id="editIdentifier" contenteditable="true"><br>
+
+            <label for="editDateID" >Identified on</label>
+            <input type="date" id="editDateID" contenteditable="true"><br>
+
+            <label for="editProject" >Related to</label>
+            <input type="text" id="editProject" contenteditable="true"><br>
+
+            <label for="editPerson" >Assigned to</label>
+            <input type="text" id="editPerson" contenteditable="true"><br>
+
+            <label for="editStatus" >Status</label>
+            <input type="text" id="editStatus" contenteditable="true"><br>
+
+            <label for="editPriority" >Priority level</label>
+            <input type="text" id="editPriority" contenteditable="true"><br>
+
+            <label for="editTargetDate" >Target Resolution Date</label>
+            <input type="date" id="editTargetDate" contenteditable="true"><br>
+
+            <label for="editActualDate" >Actual Resolutio Date</label>
+            <input type="date" id="editActualDate" contenteditable="true"><br>
+
+            <label for="editResSumm" >Resolution Summary</label>
+            <input type="text" id="editResSumm" contenteditable="true"><br>
+
+            <button id="saveButton">Save ticket</button><br><br>
+
+        </div>
+
+        <!-- clear all tickets -->
         <button id="clearButton">Clear all records</button><br>
 
-        <button id="retrieveButton">Show All</button><br>
+        <!-- retrieve specific ticket -->
+        <label for="retrieveKey" >Enter Key to retrieve item</label>
+        <input type="text" id="retrieveKey" placeholder="ticket id" required><br>
+        <button id="retrieveButton">Retrieve ticket</button><br>
+
+        <!-- retrieve all tickets -->
+        <button id="retrieveAllButton">Show All</button><br>
 
         <div>
-            <p id="output">Here:</p>
+            <p id="output">All:</p>
         </div>
         <!-- <script src = 'http://chancejs.com/chance.min.js'></script><script
       src='http://code.jquery.com/jquery-3.2.1.min.js'
