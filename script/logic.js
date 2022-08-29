@@ -249,7 +249,7 @@ function retrieveRecords()
     var infor = document.createTextNode(records);
     // alert("TypeOf: " + typeof infor);
     p.appendChild(infor);
-    showtext();
+    
     var element = document.getElementById("output");
     element.appendChild(p);
 }
