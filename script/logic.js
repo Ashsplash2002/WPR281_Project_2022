@@ -263,17 +263,75 @@ function showAllRecords()
     
         let records = window.localStorage.getItem(key);
 
-        let p = document.createElement("p");
+        console.log((JSON.parse(records).summary))
+        var outerContainer = document.createElement("div");
+        outerContainer.classList.add('ticket_item');
+
+        var statusContainer;
+        
+        if (JSON.parse(records).status == 'open') {
+            statusContainer = document.getElementById("open");
+        }
+        else if (JSON.parse(records).status == 'resolved')
+            statusContainer = document.getElementById("resolved");
+        else {
+            statusContainer = document.getElementById("overdue");
+        }
+        outerContainer.innerHTML += '<h2 class="ticket_title">' + (JSON.parse(records).summary) + '</h2>';
+        statusContainer.appendChild(outerContainer);
+
+        // Details 
+        var details = '<div class="row"><div class="col-6"><div class="row label_title">Description:</div></div><div class="col-6"><div class="row input">' + (JSON.parse(records).details) + '</div></div></div>';
+        outerContainer.innerHTML += details;
+
+        // identified 
+        var identified = '<div class="row"><div class="col-6"><div class="row label_title">Identified:</div></div><div class="col-6"><div class="row input">' + (JSON.parse(records).identified) + '</div></div></div>';
+        outerContainer.innerHTML += identified;
+
+        // dateID 
+        var dateID = '<div class="row"><div class="col-6"><div class="row label_title">Date:</div></div><div class="col-6"><div class="row input">' + (JSON.parse(records).dateID) + '</div></div></div>';
+        outerContainer.innerHTML += dateID;
+
+            // project 
+            var project = '<div class="row"><div class="col-6"><div class="row label_title">project:</div></div><div class="col-6"><div class="row input">' + (JSON.parse(records).project.name) + '</div></div></div>';
+            outerContainer.innerHTML += project;
+
+            var projectid = '<div class="row"><div class="col-6"></div><div class="col-6"><div class="row input">' + (JSON.parse(records).project.id) + '</div></div></div>';
+            outerContainer.innerHTML += projectid;
     
-        let infor = document.createTextNode(records);
-    
-    
-    
-        p.appendChild(infor);
-    
-        let el = document.getElementById("output");
-    
-        el.appendChild(p);
+
+        //assigned
+
+        var outerSubsection = document.createElement("div");
+        outerSubsection.classList.add('row', 'subsection');
+
+        outerSubsection.innerHTML += '<div class="col-12 subsection_heading">Assigned to: </div>';
+
+        var name = '<div class="col-6"><div class="row label_title">Name:</div></div><div class="col-6"><div class="row input">' + (JSON.parse(records).assigned.firstname) + ' ' + (JSON.parse(records).assigned.surname) + '</div></div>';
+        outerSubsection.innerHTML += name;
+
+        var email = '<div class="col-6"><div class="row label_title">Email:</div></div><div class="col-6"><div class="row input">' + (JSON.parse(records).assigned.email) + '</div></div>';
+        outerSubsection.innerHTML += email;
+
+        var username = '<div class="col-6"><div class="row label_title">Username:</div></div><div class="col-6"><div class="row input">' + (JSON.parse(records).assigned.username) + '</div></div>';
+        outerSubsection.innerHTML += username;
+
+        outerContainer.appendChild(outerSubsection);
+
+        // status 
+        var status = '<div class="row"><div class="col-6"><div class="row label_title">Status:</div></div><div class="col-6"><div class="row input">' + (JSON.parse(records).status) + '</div></div></div>';
+        outerContainer.innerHTML += status;
+
+        // priority 
+        var priority = '<div class="row"><div class="col-6"><div class="row label_title">Priority:</div></div><div class="col-6"><div class="row input">' + (JSON.parse(records).priority) + '</div></div></div>';
+        outerContainer.innerHTML += priority;
+
+        // targetResDate 
+        var targetResDate = '<div class="row"><div class="col-6"><div class="row label_title">Target Resolution Date:</div></div><div class="col-6"><div class="row input">' + (JSON.parse(records).targetResDate) + '</div></div></div>';
+        outerContainer.innerHTML += targetResDate;
+
+       
+        
     }    
 }
 
@@ -286,4 +344,6 @@ window.onload =function()
     document.getElementById("retrieveAllButton").onclick = showAllRecords
     document.getElementById("editButton").onclick = editTicket
     document.getElementById("saveButton").onclick = saveTicket
+
+    
 }

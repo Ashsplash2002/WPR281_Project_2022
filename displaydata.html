@@ -18,20 +18,7 @@
     
     
     <table style="margin: auto;">
-        <tr>
-            <td>
-                <a style="color:azure">Backlog: </a>
-            </td>
-            <td>
-                <a style="color:azure">Ready: </a>
-            </td>
-            <td>
-                <a style="color:azure">In Progress: </a>
-            </td>
-            <td>
-                <a style="color:azure">Done: </a>
-            </td>
-        <tr>
+       
         <td><div>
             <button onclick="showpopup()" id="show-popup" class="btn btn-lrg btn-primary btn-block btn-dark btn-outline-light" >
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" t="1551322312294" viewBox="0 0 1024 1024" version="1.1" pId="10297" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -49,28 +36,7 @@
             </div>
         
     </td>
-        </tr>
-        <tr >
-            <td>
-                <ul class="list"   style="list-style: none;">
-                <div id="issuesList"></div>
-                </ul>
-            </td>
-            <td>
-                <ul style="list-style: none;"></ul>
-            </td>
-            <td>
-                <ul style="list-style: none;">
-                    
-                </ul>
-            </td>
-            <td>
-                <ul style="list-style: none;">
-                    
-            </td>
-
-            
-        </tr>
+    
     </table>
     <div>
         
@@ -83,12 +49,12 @@
                 <h2 >Ticket</h2>
                 <div class="form1-element">
                     <label for="summ" >Summary</label>
-                    <input type="text" id="summ" placeholder="Summary of Issue" required autofocus>
+                    <input type="text" class="form-control" id="summ" placeholder="Summary of Issue" required autofocus>
                 </div>
 
                 <div class="form1-element">
                     <label for="details" >Description</label>
-                    <input type="text" id="details" placeholder="Detailed description" required><br>
+                    <input type="text" id="details" class="form-control" placeholder="Detailed description" required><br>
                 </div>
 
                 <div class="form1-element">
@@ -109,7 +75,7 @@
 
                 <div class="form1-element">
                     <label for="dateID" >Identified on</label>
-                    <input type="date" id="dateID" class="rounded" style="margin-left:112px; width: 143px;" required><br>
+                    <input type="date" id="dateID" class="rounded form-control" style="margin-left:112px; width: 143px;" required><br>
                 </div>
 
                 <div class="form1-element">
@@ -161,7 +127,7 @@
 
                 <div class="form1-element">
                     <label for="targetDate" >Target Resolution Date</label>
-                    <input type="date" id="targetDate" class="rounded" style="margin-left:50px ;" required><br>
+                    <input type="date" id="targetDate" class="rounded form-control" style="margin-left:50px ;" required><br>
                 </div>
 
                 <button type="submit" id="submitButton" class="btn btn-secondary mb-3 btn-group-lg ">Submit</button>
@@ -171,13 +137,13 @@
 
        <div class="cards">
 
-        <label for="removeKey" style="color:antiquewhite; font-weight:bold; margin-top:5px; margin-left:12px;"  >Enter ticket number to delete item</label>
-        <input type="text" id="removeKey" placeholder="Remove ticket number" class="rounded" style="margin-top:5px; " required><br>
+        <label for="removeKey" style="color:antiquewhite; font-weight:bold; margin-top:5px;"  >Enter ticket number to delete item</label>
+        <input type="text" id="removeKey" placeholder="Remove ticket number" class="rounded form-control" style="margin-top:5px; " required><br>
         <button id="removeButton" class="btn btn-secondary mb-3 btn-group-lg" style="margin-left:12px;">Remove record</button><br>
 
         <!-- Confirm which ticket to edit -->
         <label for="edit" style=" color:antiquewhite; font-weight:bold; margin-left:12px;">Enter the ticket number for the ticket you want to edit</label>
-        <input type="text" style=" margin-left:12px;" class="rounded" id="edit" placeholder="Edit ticket number" required><br>
+        <input type="text" style=" margin-left:12px;" class="rounded form-control" id="edit" placeholder="Edit ticket number" required><br>
         <button  id="editButton" style=" margin-top:5px ; margin-left:12px;" class="btn btn-secondary mb-3 btn-group-lg">Edit ticket</button><br><br>
 
        </div>
@@ -190,37 +156,37 @@
             <h2 style="color:antiquewhite;">Edit Ticket</h2>
 
             <label for="editSumm" style="color:antiquewhite; font-weight:bold;" >Summary</label>
-            <input type="text" id="editSumm" contenteditable="true" class="rounded" style=" margin-left: 102px;" autofocus><br>
+            <input type="text" id="editSumm" contenteditable="true" class="rounded form-control" style=" margin-left: 102px;" autofocus><br>
 
             <label for="editDetails" style="color:antiquewhite; font-weight:bold;" >Description</label>
-            <input type="text" id="editDetails" contenteditable="true" class="rounded" style=" margin-left:88px;"><br>
+            <input type="text" id="editDetails" contenteditable="true" class="rounded form-control" style=" margin-left:88px;"><br>
 
             <label for="editIdentifier" style="color:antiquewhite; font-weight:bold;" >Identified by</label>
-            <input type="text" id="editIdentifier" contenteditable="true" class="rounded" style=" margin-left:78px;"><br>
+            <input type="text" id="editIdentifier" contenteditable="true" class="rounded form-control" style=" margin-left:78px;"><br>
 
             <label for="editDateID" style="color:antiquewhite; font-weight:bold;" >Identified on</label>
-            <input type="date" id="editDateID" contenteditable="true" class="rounded" style=" margin-left:78px;"><br>
+            <input type="date" id="editDateID" contenteditable="true" class="rounded form-control" style=" margin-left:78px;"><br>
 
             <label for="editProject" style="color:antiquewhite; font-weight:bold;" >Related to</label>
-            <input type="text" id="editProject" contenteditable="true" class="rounded" style=" margin-left:97px;"><br>
+            <input type="text" id="editProject" contenteditable="true" class="rounded form-control" style=" margin-left:97px;"><br>
 
             <label for="editPerson" style="color:antiquewhite; font-weight:bold;" >Assigned to</label>
-            <input type="text" id="editPerson" contenteditable="true" class="rounded" style=" margin-left:85px;"><br>
+            <input type="text" id="editPerson" contenteditable="true" class="rounded form-control" style=" margin-left:85px;"><br>
 
             <label for="editStatus" style="color:antiquewhite; font-weight:bold;" >Status</label>
-            <input type="text" id="editStatus" contenteditable="true" class="rounded" style=" margin-left:128px;"><br>
+            <input type="text" id="editStatus" contenteditable="true" class="rounded form-control" style=" margin-left:128px;"><br>
 
             <label for="editPriority" style="color:antiquewhite; font-weight:bold;" >Priority level</label>
-            <input type="text" id="editPriority" contenteditable="true" class="rounded" style=" margin-left:78px;"><br>
+            <input type="text" id="editPriority" contenteditable="true" class="rounded form-control" style=" margin-left:78px;"><br>
 
             <label for="editTargetDate" style="color:antiquewhite; font-weight:bold;" >Target Resolution Date</label>
-            <input type="date" id="editTargetDate" contenteditable="true" class="rounded" style=" margin-left:1px;"><br>
+            <input type="date" id="editTargetDate" contenteditable="true" class="rounded form-control" style=" margin-left:1px;"><br>
 
             <label for="editActualDate" style="color:antiquewhite; font-weight:bold;" >Actual Resolutio Date</label>
-            <input type="date" id="editActualDate" contenteditable="true" class="rounded" style=" margin-left:11px;" ><br>
+            <input type="date" id="editActualDate" contenteditable="true" class="rounded form-control" style=" margin-left:11px;" ><br>
 
             <label for="editResSumm" style="color:antiquewhite; font-weight:bold;" >Resolution Summary</label>
-            <input type="text" id="editResSumm" contenteditable="true" class="rounded" style=" margin-left:16px;"><br>
+            <input type="text" id="editResSumm" contenteditable="true" class="rounded form-control" style=" margin-left:16px;"><br>
 
             <button id="saveButton" class="btn btn-secondary mb-3 btn-group-lg">Save ticket</button><br><br>
 
@@ -234,7 +200,7 @@
     
             <!-- retrieve specific ticket -->
             <label for="retrieveKey" style=" color:antiquewhite; font-weight:bold; margin-left:12px;">Enter Key to retrieve item</label>
-            <input type="text" id="retrieveKey" placeholder="Ticket ID" class="rounded" required><br>
+            <input type="text" id="retrieveKey" placeholder="Ticket ID" class="rounded form-control" required><br>
             <button id="retrieveButton" class="btn btn-secondary mb-3 btn-group-lg" style=" margin-left:12px;">Retrieve ticket</button><br>
     
             <!-- retrieve all tickets -->
@@ -250,6 +216,22 @@
       crossorigin='anonymous'></script>
         <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' crossorigin='anonymous'></script> -->
 
+        <div class="ticket_row row" id="tickets">
+
+        </div>
+
+        <div class="row status_objects">
+            <div class="col-4" id="open">
+                <a style="color:azure" class="status_title">Open: </a>
+            </div>
+            <div class="col-4" id="resolved">
+                <a style="color:azure" class="status_title">Resolved: </a>
+            </div>
+            <div class="col-4" id="overdue">
+                <a style="color:azure" class="status_title">Overdue: </a>
+            </div>
+           
+        </div>
 
 </body>
 
