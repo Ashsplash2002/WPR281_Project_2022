@@ -61,6 +61,7 @@ The ticket contains:
 4. Learning about JavaScript JSON to help keep the objects we store to the localStorage as an object as things are stored as strings by default to the localStorage. 
 5. Researching about adding images to objects using JavaScript for the profile pictures of the people objects.
 6. Reasearching how to pass objects as parameters of functions.
+7. Getting the dot operator working for ticket objects retrieved from the local storage. 
 ---------
 ### Bootstrap Challenges <a name='bschallenges'></a>
 ---------
