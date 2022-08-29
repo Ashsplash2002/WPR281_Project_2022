@@ -77,10 +77,13 @@
         
         <div id="issuesList" class="popup">
             <div onclick="hidepopup()" class="close-btn">&times;</div>
+
+
+
             <div class="form1">
                 <h2 >Ticket</h2>
                 <div class="form1-element">
-                    <button onclick="submitticket()" class="btn btn-secondary mb-3 btn-group-lg ">Submit</button>
+                    
                     <ul style="list-style: none;">
                         <li>
                             <select id="projName">
@@ -91,9 +94,9 @@
                                 
                             </select>
                         </li>                      
-                 </ul>
-                 
-                    </div>
+                    </ul>                 
+                </div>
+
                 <div class = "form1-element">
                     <select id="DevName">
                         <option value="">select developer</option>
@@ -113,6 +116,7 @@
                                 <option value="Urgent">Urgent</option>
                             
                         </div>
+                        
                     <div style="padding-top: 15px;"> <input type = 'text' class = 'form-control' id = 'issueDesc' placeholder = 'Describe the issue...'></div>
                     
                         <div class="form1-element">
@@ -121,7 +125,13 @@
                         </div>
                     </div>
                 </div>
-            </div>                
+
+                <button onclick="submitticket()" class="btn btn-secondary mb-3 btn-group-lg ">Submit</button>
+
+            </div>   
+            
+            
+
         </div>
         <script src = 'http://chancejs.com/chance.min.js'></script><script
       src='http://code.jquery.com/jquery-3.2.1.min.js'

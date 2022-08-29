@@ -26,7 +26,7 @@ var issuedevname = document.getElementById('DevName').value;
 var issueproj = document.getElementById('projName').value;
 var issuePriority = document.getElementById('selectPriority').value;
 var issueDesc = document.getElementById('issueDesc').value;
-var issueId = chance.guid();
+var issueId = chance.guid()
 
 
 var issue = {
