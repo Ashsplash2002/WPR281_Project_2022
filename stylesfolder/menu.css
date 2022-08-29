@@ -1,7 +1,10 @@
 td{
+    height: 202px;
+    width: 302px;
     text-align: center;
     vertical-align: middle;
     padding-bottom: 25px;
+   
 }
 th{
     text-align: center;
