@@ -78,7 +78,7 @@ let people = new Map
 
 function store()
 { 
-    hidepopup();
+    submitticket();
     // alert("running")
     //stores items in the localStorage
     
@@ -113,6 +113,7 @@ function store()
 function editTicket()
 {
     // edit ticket
+    showpopupedit();
     let key = document.getElementById("edit").value;
     let record = window.localStorage.getItem(key);
     let ticket = JSON.parse(record);
@@ -137,6 +138,7 @@ function editTicket()
 function saveTicket()
 {
     // save edited ticket
+    submiteditticket();
     let key = document.getElementById("edit").value;
     let record = window.localStorage.getItem(key);
     let ticket = JSON.parse(record);
@@ -238,6 +240,7 @@ function clearStorage()
 
 function retrieveRecords()
 { 
+    
     //retrieves items in the localStorage
     var key = document.getElementById('retrieveKey').value; //gets key from user
     console.log("retrieve records");
@@ -246,6 +249,7 @@ function retrieveRecords()
     var infor = document.createTextNode(records);
     // alert("TypeOf: " + typeof infor);
     p.appendChild(infor);
+    showtext();
     var element = document.getElementById("output");
     element.appendChild(p);
 }

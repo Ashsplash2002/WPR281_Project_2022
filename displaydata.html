@@ -95,7 +95,7 @@
                     <label for="identifier" >Identified by</label>
                     <!-- <ul style="list-style: none;"> -->
                         <!-- <li> -->
-                            <select id="identifier">
+                            <select id="identifier" class="rounded" style="margin-left:115px; width: 143px;">
                                 <option value="">Select Project</option>
                                 <option value="emile">Emile</option>
                                 <option value="damon">Damon</option>
@@ -109,14 +109,14 @@
 
                 <div class="form1-element">
                     <label for="dateID" >Identified on</label>
-                    <input type="date" id="dateID" required><br>
+                    <input type="date" id="dateID" class="rounded" style="margin-left:112px; width: 143px;" required><br>
                 </div>
 
                 <div class="form1-element">
                     <label for="projName" >Related to</label>
                     <!-- <ul style="list-style: none;"> -->
                         <!-- <li> -->
-                            <select id="projName">
+                            <select id="projName" class="rounded" style="margin-left:128px ; width: 143px;">
                                 <option value="">Select Project</option>
                                 <option value="alpha">Alpha</option>
                                 <option value="omega">Omega</option>
@@ -129,7 +129,7 @@
 
                 <div class = "form1-element">
                     <label for="DevName" >Assigned to</label>
-                    <select id="DevName">
+                    <select id="DevName" class="rounded" style="margin-left:118px ; width: 143px;">
                         <option value="">Select developer</option>
                         <option value="emile">Emile</option>
                         <option value="damon">Damon</option>
@@ -141,7 +141,7 @@
                         
                 <div class="form1-element">
                     <label for="status">Status</label>
-                    <select id="status">
+                    <select id="status" class="rounded" style="margin-left:153px ; width: 143px;">
                         <option value="">Select Status</option>
                         <option value="open">Open</option>
                         <option value="resolved">Resolved</option>
@@ -151,7 +151,7 @@
 
                 <div class="form1-element">
                     <label for="selectPriority" >Priority level</label>
-                    <select id="selectPriority">
+                    <select id="selectPriority" class="rounded" style="margin-left:114px ; width: 143px;">
                         <option value="">Select Priority</option>
                         <option value="low">Low</option>
                         <option value="medium">Medium</option>
@@ -161,7 +161,7 @@
 
                 <div class="form1-element">
                     <label for="targetDate" >Target Resolution Date</label>
-                    <input type="date" id="targetDate" required><br>
+                    <input type="date" id="targetDate" class="rounded" style="margin-left:50px ;" required><br>
                 </div>
 
                 <button type="submit" id="submitButton" class="btn btn-secondary mb-3 btn-group-lg ">Submit</button>
@@ -169,70 +169,81 @@
             
         </div>
 
-        <label for="removeKey" >Enter ticket number to delete item</label>
-        <input type="text" id="removeKey" placeholder="remove ticket number" required><br>
-        <button id="removeButton">Remove record</button><br>
+       <div class="cards">
+
+        <label for="removeKey" style="color:antiquewhite; font-weight:bold; margin-top:5px; margin-left:12px;"  >Enter ticket number to delete item</label>
+        <input type="text" id="removeKey" placeholder="Remove ticket number" class="rounded" style="margin-top:5px; " required><br>
+        <button id="removeButton" class="btn btn-secondary mb-3 btn-group-lg" style="margin-left:12px;">Remove record</button><br>
 
         <!-- Confirm which ticket to edit -->
-        <label for="edit">Enter the ticket number for the ticket you want to edit</label>
-        <input type="text" id="edit" placeholder="edit ticket number" required><br>
-        <button id="editButton">Edit ticket</button><br><br>
+        <label for="edit" style=" color:antiquewhite; font-weight:bold; margin-left:12px;">Enter the ticket number for the ticket you want to edit</label>
+        <input type="text" style=" margin-left:12px;" class="rounded" id="edit" placeholder="Edit ticket number" required><br>
+        <button  id="editButton" style=" margin-top:5px ; margin-left:12px;" class="btn btn-secondary mb-3 btn-group-lg">Edit ticket</button><br><br>
+
+       </div>
 
         <!-- Edit ticket -->
+      
+        <div id="ticket" class="popup1">
+            <div onclick="hidepopupedit()" class="close-btn">&times;</div>
 
-        <div id="ticket">
-            <h2>Edit Ticket</h2>
-            <label for="editSumm" >Summary</label>
-            <input type="text" id="editSumm" contenteditable="true" autofocus><br>
+            <h2 style="color:antiquewhite;">Edit Ticket</h2>
 
-            <label for="editDetails" >Description</label>
-            <input type="text" id="editDetails" contenteditable="true"><br>
+            <label for="editSumm" style="color:antiquewhite; font-weight:bold;" >Summary</label>
+            <input type="text" id="editSumm" contenteditable="true" class="rounded" style=" margin-left: 102px;" autofocus><br>
 
-            <label for="editIdentifier" >Identified by</label>
-            <input type="text" id="editIdentifier" contenteditable="true"><br>
+            <label for="editDetails" style="color:antiquewhite; font-weight:bold;" >Description</label>
+            <input type="text" id="editDetails" contenteditable="true" class="rounded" style=" margin-left:88px;"><br>
 
-            <label for="editDateID" >Identified on</label>
-            <input type="date" id="editDateID" contenteditable="true"><br>
+            <label for="editIdentifier" style="color:antiquewhite; font-weight:bold;" >Identified by</label>
+            <input type="text" id="editIdentifier" contenteditable="true" class="rounded" style=" margin-left:78px;"><br>
 
-            <label for="editProject" >Related to</label>
-            <input type="text" id="editProject" contenteditable="true"><br>
+            <label for="editDateID" style="color:antiquewhite; font-weight:bold;" >Identified on</label>
+            <input type="date" id="editDateID" contenteditable="true" class="rounded" style=" margin-left:78px;"><br>
 
-            <label for="editPerson" >Assigned to</label>
-            <input type="text" id="editPerson" contenteditable="true"><br>
+            <label for="editProject" style="color:antiquewhite; font-weight:bold;" >Related to</label>
+            <input type="text" id="editProject" contenteditable="true" class="rounded" style=" margin-left:97px;"><br>
 
-            <label for="editStatus" >Status</label>
-            <input type="text" id="editStatus" contenteditable="true"><br>
+            <label for="editPerson" style="color:antiquewhite; font-weight:bold;" >Assigned to</label>
+            <input type="text" id="editPerson" contenteditable="true" class="rounded" style=" margin-left:85px;"><br>
 
-            <label for="editPriority" >Priority level</label>
-            <input type="text" id="editPriority" contenteditable="true"><br>
+            <label for="editStatus" style="color:antiquewhite; font-weight:bold;" >Status</label>
+            <input type="text" id="editStatus" contenteditable="true" class="rounded" style=" margin-left:128px;"><br>
 
-            <label for="editTargetDate" >Target Resolution Date</label>
-            <input type="date" id="editTargetDate" contenteditable="true"><br>
+            <label for="editPriority" style="color:antiquewhite; font-weight:bold;" >Priority level</label>
+            <input type="text" id="editPriority" contenteditable="true" class="rounded" style=" margin-left:78px;"><br>
 
-            <label for="editActualDate" >Actual Resolutio Date</label>
-            <input type="date" id="editActualDate" contenteditable="true"><br>
+            <label for="editTargetDate" style="color:antiquewhite; font-weight:bold;" >Target Resolution Date</label>
+            <input type="date" id="editTargetDate" contenteditable="true" class="rounded" style=" margin-left:1px;"><br>
 
-            <label for="editResSumm" >Resolution Summary</label>
-            <input type="text" id="editResSumm" contenteditable="true"><br>
+            <label for="editActualDate" style="color:antiquewhite; font-weight:bold;" >Actual Resolutio Date</label>
+            <input type="date" id="editActualDate" contenteditable="true" class="rounded" style=" margin-left:11px;" ><br>
 
-            <button id="saveButton">Save ticket</button><br><br>
+            <label for="editResSumm" style="color:antiquewhite; font-weight:bold;" >Resolution Summary</label>
+            <input type="text" id="editResSumm" contenteditable="true" class="rounded" style=" margin-left:16px;"><br>
+
+            <button id="saveButton" class="btn btn-secondary mb-3 btn-group-lg">Save ticket</button><br><br>
 
         </div>
+        
 
-        <!-- clear all tickets -->
-        <button id="clearButton">Clear all records</button><br>
-
-        <!-- retrieve specific ticket -->
-        <label for="retrieveKey" >Enter Key to retrieve item</label>
-        <input type="text" id="retrieveKey" placeholder="ticket id" required><br>
-        <button id="retrieveButton">Retrieve ticket</button><br>
-
-        <!-- retrieve all tickets -->
-        <button id="retrieveAllButton">Show All</button><br>
-
-        <div>
-            <p id="output">All:</p>
+        <div class="cards" style="margin-top:25px;">
+            <div>
+                <!-- clear all tickets -->
+            <button id="clearButton" class="btn btn-secondary mb-3 btn-group-lg" style="margin-top:10px; margin-left:12px;">Clear all records</button><br>
+    
+            <!-- retrieve specific ticket -->
+            <label for="retrieveKey" style=" color:antiquewhite; font-weight:bold; margin-left:12px;">Enter Key to retrieve item</label>
+            <input type="text" id="retrieveKey" placeholder="Ticket ID" class="rounded" required><br>
+            <button id="retrieveButton" class="btn btn-secondary mb-3 btn-group-lg" style=" margin-left:12px;">Retrieve ticket</button><br>
+    
+            <!-- retrieve all tickets -->
+            <button id="retrieveAllButton" class="btn btn-secondary mb-3 btn-group-lg" style=" margin-left:12px;">Show All</button><br>
         </div>
+            <p id="output" class="showalltickets" style=" margin-left:12px; margin-top: 35px;">All:</p>
+        </div>
+        
+        
         <!-- <script src = 'http://chancejs.com/chance.min.js'></script><script
       src='http://code.jquery.com/jquery-3.2.1.min.js'
       integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
