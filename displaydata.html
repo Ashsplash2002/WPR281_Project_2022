@@ -1,5 +1,5 @@
-<!DOCTYPE <html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,10 +9,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/stylesfolder/menu.css">
-    <script src="/script/app.js" defer>    </script>
-<style type="text/css">
-
-</style>
+    <script src="./script/app.js" defer>    </script>
+    <script type="text/javascript" src="./script/logic.js"></script>
+    <style type="text/css"></style>
 </head>
 <body>
     
@@ -165,18 +164,24 @@
                     <input type="date" id="targetDate" required><br>
                 </div>
 
-                <button onclick="submitticket()" class="btn btn-secondary mb-3 btn-group-lg ">Submit</button>
-
+                <button type="submit" id="submitButton" class="btn btn-secondary mb-3 btn-group-lg ">Submit</button>
             </div> 
             
-            
-
         </div>
-        <script src = 'http://chancejs.com/chance.min.js'></script><script
+
+        <p id="demo"></p>
+        <button id="clearButton">Clear all records</button><br>
+
+        <button id="retrieveButton">Show All</button><br>
+
+        <div>
+            <p id="output">Here:</p>
+        </div>
+        <!-- <script src = 'http://chancejs.com/chance.min.js'></script><script
       src='http://code.jquery.com/jquery-3.2.1.min.js'
       integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
       crossorigin='anonymous'></script>
-        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' crossorigin='anonymous'></script>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' crossorigin='anonymous'></script> -->
 
 
 </body>

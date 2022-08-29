@@ -9,15 +9,14 @@ function showpopup(){
 function submitticket(){
     hidepopup();
     }
-    function hidepopup(){
-        document.getElementsByClassName('popup')[0].style.display = "none";
-    }
+
+function hidepopup(){
+    document.getElementsByClassName('popup')[0].style.display = "none";
+}
+
 function showpopup(){
     document.getElementsByClassName('popup')[0].style.display = "block";
 }
-
-
-
 
 document.getElementById('popup').addEventListener('Submit', saveIssue);
 
