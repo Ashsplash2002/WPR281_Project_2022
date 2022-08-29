@@ -86,38 +86,66 @@
                     
                     <ul style="list-style: none;">
                         <li>
-                            <select id="projName">
+                            <!-- <select id="projName">
                                 <option value="">select Project</option>
                                 <option value="Project1">Project 1</option>
                                 <option value="Project2">Project 2</option>
                                 <option value="Project3">Project 3</option>
                                 
-                            </select>
+                            </select> -->
+
+                            <label for="summ" >Summary</label>
+            <input type="text" id="summ" placeholder="Summary of Issue" required autofocus><br>
+
+            <label for="details" >Description</label>
+            <input type="text" id="details" placeholder="Detailed description of the issue" required><br>
+
+            <label for="identifier" >Identified by</label>
+            <input type="text" id="identifier" placeholder="Who identified the issue" required><br>
+
+            <label for="dateID" >Identified on</label>
+            <input type="date" id="dateID" required><br>
+
+            <!-- create dropdown instead -->
+            <label for="project" >Related to</label>
+            <input type="text" id="project" placeholder="Which project the issue is related to" required><br>
+
+            <label for="person" >Assigned to</label>
+            <input type="text" id="person" placeholder="Which person will handle the issue" required><br>
+
+            <label for="status" >Status</label>
+            <input type="text" id="status" placeholder="open/resolved/overdue" required><br>
+
+            <label for="priority" >Priority level</label>
+
+            <select id="selectPriority">
+                <option value="">select Priority</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+                <option value="Urgent">Urgent</option>
+                
+            
                         </li>                      
                     </ul>                 
                 </div>
 
                 <div class = "form1-element">
-                    <select id="DevName">
+                    <!-- <select id="DevName">
                         <option value="">select developer</option>
                         <option value="John">John</option>
                         <option value="Jake">Jake</option>
                         <option value="Peter">Peter</option>
 
-                    </select>
+                    </select> -->
                     <div>
                         
                         <div class="form1-element">
-                            <select id="selectPriority">
-                                <option value="">select Priority</option>
-                                <option value="Low">Low</option>
-                                <option value="Medium">Medium</option>
-                                <option value="High">High</option>
-                                <option value="Urgent">Urgent</option>
+                           
                             
                         </div>
                         
-                    <div style="padding-top: 15px;"> <input type = 'text' class = 'form-control' id = 'issueDesc' placeholder = 'Describe the issue...'></div>
+                    <!-- <div style="padding-top: 15px;"> <input type = 'text' class = 'form-control' id = 'issueDesc' placeholder = 'Describe the issue...'></div> -->
                     
                         <div class="form1-element">
                             
@@ -129,6 +157,8 @@
                 <button onclick="submitticket()" class="btn btn-secondary mb-3 btn-group-lg ">Submit</button>
 
             </div>   
+            <label for="targetDate" >Target Resolution Date</label>
+            <input type="date" id="targetDate" required><br>
             
             
 
