@@ -1,7 +1,4 @@
-# WPR2(7)81 Project 2022
-
-#### Bug Tracking System 
-
+# Bug Tracking System 
 </br>
 
 ## Table of contents 
